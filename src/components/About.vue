@@ -1,5 +1,5 @@
 <template>
-  <section class="h-96 flex justify-center items-center relative">
+  <section class="min-h-screen flex justify-center items-center relative">
     <!-- <div class="about-waves">
       <img :src="waves" alt="waves-svg" />
     </div> -->

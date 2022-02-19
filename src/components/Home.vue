@@ -1,5 +1,5 @@
 <template>
-  <section class="h-96 flex justify-center items-center relative">
+  <section class="min-h-screen flex justify-center items-center relative">
       <div class="p-6 text-center">
         <h1 class="text-white text-2xl font-serif">
             Modernizacja strony <br />
