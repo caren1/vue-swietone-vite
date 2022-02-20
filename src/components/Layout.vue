@@ -1,13 +1,11 @@
 <template>
-  <div class="bg-championGreen">
+  <div class="bg-championGreen relative">
       <slot />
   </div>
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style>

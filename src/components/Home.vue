@@ -1,14 +1,14 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative">
       <div class="p-6 text-center">
-        <h1 class="text-white text-2xl font-serif">
+        <h1 class="text-white text-3xl font-serif">
             Modernizacja strony <br />
             internetowej lub brandingu?
         </h1>
-        <h2 class="text-white text-lg font-sans font-light mt-2 mb-2">A może jeszcze nie masz strony?</h2>
-        <a class="text-white text-xs font-serif p-1 hidden" href="#">brzmi nieźle.</a>
+        <h2 class="text-white text-lg font-sans font-light mt-2 mb-6">A może jeszcze nie masz strony?</h2>
+        <a class="text-white text-md font-serif p-1" href="#">brzmi nieźle.</a>
       </div>
-      <div class="w-full absolute bottom-1">
+      <div class="w-full absolute bottom-5">
         <img :src="waves" alt="wave-svg">
       </div>
   </section>

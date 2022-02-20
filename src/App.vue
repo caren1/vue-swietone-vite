@@ -5,13 +5,15 @@ import Layout from './components/Layout.vue'
 import Home from './components/Home.vue'
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
+import Intro from './components/Intro.vue';
 </script>
 
 <template>
   <Layout>
-    <!-- <Navbar /> -->
+    <!-- <Intro /> -->
+    <Navbar />
     <Home />
-    <About />
+    <!-- <About /> -->
   </Layout>
 </template>
 
