@@ -6,6 +6,7 @@ import Home from './components/Home.vue'
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Intro from './components/Intro.vue';
+import Bio from './components/Bio.vue';
 </script>
 
 <template>
@@ -14,6 +15,8 @@ import Intro from './components/Intro.vue';
     <Navbar />
     <Home />
     <About />
+    <!-- Swietone  -->
+    <Bio />
   </Layout>
 </template>
 
