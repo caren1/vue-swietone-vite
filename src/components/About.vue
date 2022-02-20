@@ -1,20 +1,21 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center relative">
-    <!-- <div class="about-waves">
-      <img :src="waves" alt="waves-svg" />
-    </div> -->
+  <section class="min-h-screen flex justify-center items-center relative p-6">
+    <div class="w-full absolute top-0">
+        <img :src="waves" alt="wave-svg">
+      </div>
     <div class="about-info">
       <div class="faded-circle"></div>
       <div class="">
-        <h1 class="text-white text-center text-xl font-serif">Co możemy dla Ciebie zrobić?</h1>
-        <ul class="leading-6 px-10 py-6 text-white text-sm font-sans font-light">
-          <li>zaprojektować branding</li>
-          <li>odświeżyć wizerunek twojej działalności</li>
+        <h1 class="text-white text-center text-2xl font-serif mb-4">Co możemy dla Ciebie zrobić?</h1>
+        <ul class="leading-[50px] px-10 py-6 text-white text-lg font-sans font-light">
           <li>stworzyć nowoczesną stronę internetową</li>
           <li>przygotować dla niej unikalny szablon</li>
-          <li>zadbać o odpowiedni UX</li>
           <li>zoptymalizować ją pod przeglądarki</li>
+          <li>zadbać o odpowiedni User Experience</li>
+          <li>zaprojektować branding</li>
+          <li>odświeżyć wizerunek twojej działalności</li>
           <li>zmodernizować twoją istniejącą stronę</li>
+          <p class="mt-10 text-right text-sm">Chyba, że potrzebujesz czegoś więcej?</p>
         </ul>
       </div>
     </div>

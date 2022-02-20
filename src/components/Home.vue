@@ -8,7 +8,7 @@
         <h2 class="text-white text-lg font-sans font-light mt-2 mb-6">A może jeszcze nie masz strony?</h2>
         <a class="text-white text-md font-serif p-1" href="#">brzmi nieźle.</a>
       </div>
-      <div class="w-full absolute bottom-5">
+      <div class="w-full absolute bottom-8">
         <img :src="waves" alt="wave-svg">
       </div>
   </section>

@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="px-6 py-6 flex justify-between items-center bg-transparent absolute w-screen z-10">
-      <div class="max-w-[130px]">
+      <div class="max-w-[120px] md:max-w-[160px]">
         <img class="max-w-[100%]" :src="swietoneHorizontalLogo" alt="swietone-main-logo" />
       </div>
       <div class="menu" @click="$emit('toggleMenu', true)">
@@ -51,14 +51,14 @@ export default {
     position: absolute;
     opacity: 0;
     top: 50%;
-    margin-top: -3px; // here
+    margin-top: -3px; 
     left: 50%;
   }
   .circle:nth-child(4) {
-    margin-left: -12px; // here
+    margin-left: -12px; 
   }
   .circle:nth-child(5) {
-    margin-left: 6px; // here
+    margin-left: 6px; 
   }
   &:hover,
   &:focus {

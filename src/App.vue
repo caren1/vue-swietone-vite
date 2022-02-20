@@ -13,7 +13,7 @@ import Intro from './components/Intro.vue';
     <!-- <Intro /> -->
     <Navbar />
     <Home />
-    <!-- <About /> -->
+    <About />
   </Layout>
 </template>
 
