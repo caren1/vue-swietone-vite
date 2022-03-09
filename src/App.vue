@@ -7,16 +7,20 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Intro from './components/Intro.vue';
 import Bio from './components/Bio.vue';
+import Logos from './components/Logos.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <Layout>
-    <!-- <Intro /> -->
+    <Intro />
     <Navbar />
     <Home />
     <About />
     <!-- Swietone  -->
     <Bio />
+    <Logos />
+    <Footer />
   </Layout>
 </template>
 

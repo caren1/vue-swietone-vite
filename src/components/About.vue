@@ -1,13 +1,13 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center relative p-6">
+  <section class="min-h-screen flex justify-center items-center relative">
     <div class="w-full absolute top-0">
-        <img :src="waves" alt="wave-svg">
+        <!-- <img :src="waves" alt="wave-svg"> -->
       </div>
     <div class="about-info">
       <div class="faded-circle"></div>
       <div class="">
-        <h1 class="text-white text-center text-2xl font-serif mb-4">Co możemy dla Ciebie zrobić?</h1>
-        <ul class="leading-[50px] px-10 py-6 text-white text-lg font-sans font-light">
+        <h1 class="text-white text-center text-xl font-serif mb-4">Co możemy dla Ciebie zrobić?</h1>
+        <ul class="leading-[40px] xxs:leading-[40px] px-6 py-6 text-white text-[15px] font-sans font-light ml-[0.75rem] xxs:text-sm">
           <li>stworzyć nowoczesną stronę internetową</li>
           <li>przygotować dla niej unikalny szablon</li>
           <li>zoptymalizować ją pod przeglądarki</li>
@@ -19,15 +19,20 @@
         </ul>
       </div>
     </div>
+    <div class="flex absolute -bottom-14 z-1 max-w-[80%] -right-5 fixed">
+      <img :src="bigCloud" alt="bigCloud-svg" class="w-100">
+    </div>
   </section>
 </template>
 
 <script>
 import waves from "../assets/svg/waves.svg";
+import bigCloud from "../assets/svg/big-cloud.svg";
 export default {
     data() {
     return {
-      waves
+      waves,
+      bigCloud
     }
   }
 }

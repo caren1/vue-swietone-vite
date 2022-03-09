@@ -26,6 +26,9 @@ module.exports = {
         bold: 700,
         extrabold: 800,
         black: 900,
+      },
+      screens: {
+        'xxs': {'max': '360px'},
       }
   },
   plugins: [],
