@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center md:hidden">
+  <section class="block md:hidden min-h-screen flex justify-center items-center">
       <img :src="swietoneMainLogo" alt="swietone-main-logo">
   </section>
 </template>

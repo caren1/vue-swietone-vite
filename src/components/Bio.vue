@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="min-h-screen flex justify-center items-center relative p-6 z-5">
-      <div class="leading-5 relative top-[-55px] z-5">
-        <h3 class="text-white text-3xl font-serif mb-4 xxs:text-xl">Wojciech Czarnocki</h3>
-        <div class="text-sm xxs:text-sm pr-4">
+      <div class="leading-5 relative top-[-55px] z-5 p-4">
+        <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl">Wojciech Czarnocki</h3>
+        <div class="text-xs ">
           <p class="text-white font-sans font-thin mb-4">
           Obecnie pracuję jako Fullstack Developer w firmie Hapag Lloyd,
           wcześniej przez 2 lata pracowałem jako Junior Java Engineer, natomiast
@@ -22,7 +22,7 @@
         </p>
         </div>
         
-        <div class="flex mt-2">
+        <div class="flex my-2">
           <img class="max-w-[35px] align-bottom p-2 social-icon" :src="linkedInIcon" alt="linkedin-icon" />
           <img class="max-w-[35px] align-bottom p-2 social-icon" :src="gitIcon" alt="github-icon" />
           <img class="max-w-[30px] align-bottom p-1 social-icon" :src="behanceIcon" alt="behance-icon" />

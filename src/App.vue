@@ -9,6 +9,7 @@ import Intro from './components/Intro.vue';
 import Bio from './components/Bio.vue';
 import Logos from './components/Logos.vue';
 import Footer from './components/Footer.vue';
+import Swietone from './components/Swietone.vue';
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import Footer from './components/Footer.vue';
     <Navbar />
     <Home />
     <About />
-    <!-- Swietone  -->
+    <Swietone />
     <Bio />
     <Logos />
     <Footer />

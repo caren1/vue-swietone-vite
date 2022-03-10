@@ -52,11 +52,11 @@ export default {
       }
 
       25% {
-          transform: translate(0, -35px) scale(1.6) rotate(5deg);
+          transform: translate(0, -35px) scale(1.3) rotate(0deg);
       }
 
       50%{
-        transform:  scale(1.5) rotate(-5deg);
+        transform:  scale(1.2) rotate(0deg);
         
       }
       

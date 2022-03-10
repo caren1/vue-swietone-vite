@@ -19,7 +19,7 @@
         </ul>
       </div>
     </div>
-    <div class="flex absolute -bottom-14 z-1 max-w-[80%] -right-5 fixed">
+    <div class="flex absolute -bottom-2 z-1 max-w-[60%] -right-8 fixed">
       <img :src="bigCloud" alt="bigCloud-svg" class="w-100">
     </div>
   </section>
