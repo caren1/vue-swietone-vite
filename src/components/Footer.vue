@@ -28,8 +28,8 @@
       </div>
 
       <div class="mt-8">
-            <h5 class="text-5xl text-croissantYellow">swietone.</h5>
-                    <ul class="list-none text-md text-white font-sans font-hairline leading-5"> 
+            <h5 class="text-4xl text-croissantYellow">swietone.</h5>
+                    <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>
                         <li>kontakt@swietone.pl</li>
                         <li>czarnocki.w@wp.pl</li>
