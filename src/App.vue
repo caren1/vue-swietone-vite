@@ -10,10 +10,12 @@ import Bio from './components/Bio.vue';
 import Logos from './components/Logos.vue';
 import Footer from './components/Footer.vue';
 import Swietone from './components/Swietone.vue';
+import Menu from './components/Menu.vue';
 </script>
 
 <template>
   <Layout>
+    <Menu />
     <Intro />
     <Navbar />
     <Home />

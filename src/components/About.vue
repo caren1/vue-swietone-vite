@@ -19,8 +19,8 @@
         </ul>
       </div>
     </div>
-    <div class="flex absolute -bottom-2 z-1 max-w-[60%] md:max-w-[50%] -right-8 fixed">
-      <img :src="bigCloud" alt="bigCloud-svg" class="w-100">
+    <div class="flex absolute -bottom-2 z-1 max-w-[55%] md:max-w-[50%] right-6 fixed overflow-hidden">
+      <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden">
     </div>
   </section>
 </template>

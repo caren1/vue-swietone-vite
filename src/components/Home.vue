@@ -8,11 +8,11 @@
         <h2 class="text-white text-lg font-sans font-light mt-2 mb-6">A może jeszcze nie masz strony?</h2>
         <a class="text-white text-md font-serif p-1" href="#">brzmi nieźle.</a>
       </div>
-      <div class="w-full absolute bottom-16 waves">
-        <img :src="waves" alt="wave-svg">
+      <div class="w-full absolute bottom-20  overflow-hidden">
+        <img :src="waves" alt="wave-svg" class="overflow-hidden">
       </div>
-      <div class="w-full absolute bottom-0 waves">
-        <img :src="waves" alt="wave-svg">
+      <div class="w-full absolute bottom-2  overflow-hidden">
+        <img :src="waves" alt="wave-svg" class="overflow-hidden">
       </div>
   </section>
 </template>
@@ -57,7 +57,6 @@ export default {
 
       50%{
         transform:  scale(1.2) rotate(0deg);
-        
       }
       
       100%{

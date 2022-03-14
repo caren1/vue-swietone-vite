@@ -61,10 +61,10 @@ export default {
 };
 </script>
 
-<style>
-    a:hover {
+<style scoped>
+    a:hover, a:focus {
         transform: scale(1.08);
         transition: all .25s ease-in;
-
+        cursor: pointer;
     }
 </style>

@@ -6,7 +6,7 @@
           <p class="font-sans font-light text-white text-sm">Miejscem, w którym wykorzystuje się kreatywność, aby tworzyć i budować innowacyjne, minimalistyczne i piękne rzeczy.</p>
       </div>
       <div class="font-sans my-8 text-white font-light text-sm xxs:text-xs">
-          <div class="max-w-[150px] m-auto flex-col justify-center items-center">
+          <div class="max-w-[110px] m-auto flex-col justify-center items-center">
               <div class="flex items-center cloudy "><img :src="smallCloud" alt="small-cloud-svg" class="opacity-10 max-w-[40px]"><span class="ml-2">Kontakt</span></div>
               <div class="flex items-center cloudy"><img :src="smallCloud" alt="small-cloud-svg" class="opacity-30 max-w-[40px]"><span class="ml-2">Szczegóły</span></div>
               <div class="flex items-center cloudy"><img :src="smallCloud" alt="small-cloud-svg" class="opacity-50 max-w-[40px]"><span class="ml-2">Formalności</span></div>
