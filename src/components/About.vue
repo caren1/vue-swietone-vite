@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center relative">
+  <section class="min-h-screen flex justify-center items-center relative" id="about">
     <div class="w-full absolute top-0">
         <!-- <img :src="waves" alt="wave-svg"> -->
       </div>
@@ -19,8 +19,8 @@
         </ul>
       </div>
     </div>
-    <div class="flex absolute -bottom-2 z-1 max-w-[55%] md:max-w-[50%] right-6 fixed overflow-hidden">
-      <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden">
+    <div class="flex absolute -bottom-2 z-1 max-w-[55%] md:max-w-[50%] right-0 fixed overflow-hidden">
+      <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden relative -right-8">
     </div>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center relative w-full">
+  <section class="min-h-screen flex justify-center items-center relative w-full" id="branding">
     <div class="flex flex-wrap justify-center lg:justify-center items-center relative max-w-[85%] h-100" v-if="logos">
       <SingleLogo
         :logo="logo"
@@ -33,13 +33,21 @@ export default {
     return {
       logos: [
         {
-          alt: "elsafe-logo",
-          path: elsafeLogo,
+          alt: "gswet-logo",
+          path: gswetLogo,
         },
+          {
+            alt: "mctrade-logo",
+            path: mctLogo,
+          },
         {
           alt: "w2-logo",
           path: w2Logo,
         },
+          {
+            alt: "elsafe-logo",
+            path: elsafeLogo,
+          },
         {
           alt: "moon-logo",
           path: moonLogo,
@@ -61,16 +69,8 @@ export default {
           path: w1Logo,
         },
         {
-          alt: "mctrade-logo",
-          path: mctLogo,
-        },
-        {
           alt: "swietone-logo",
           path: swietoneLogo,
-        },
-        {
-          alt: "gswet-logo",
-          path: gswetLogo,
         },
         {
           alt: "w3-logo",

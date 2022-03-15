@@ -3,12 +3,12 @@
     <div class=" px-6 py-4 leading-8 text-white font-serif text-2xl">
       <div class="options ">
         <ul class=" leading-relaxed">
-          <li>Misja</li>
-          <li>O swietone</li>
-          <li>O mnie</li>
-          <li>Portfolio</li>
-          <li>Branding</li>
-          <li>Współpraca</li>
+          <li><a href="#about">Misja</a></li>
+          <li><a href="#swietone">O swietone</a></li>
+          <li><a href="#bio">O mnie</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#footer"> Współpraca</a></li>
         </ul>
       </div>
       <div class="my-4  w-max">

@@ -1,5 +1,5 @@
 <template>
-  <footer class="min-h-screen flex justify-center items-center relative p-6">
+  <footer class="min-h-screen flex justify-center items-center relative p-6" id="footer">
     <div class="flex-col w-100 align-center justify-around p-2 min-h-[70vh] p-3">
       <div class="font-serif">
         <h4 class="text-4xl text-white mb-2 text-right">
@@ -38,10 +38,12 @@
                     </ul>
         </div>
     </div>
-     
         <p class="absolute bottom-6 text-center font-sans text-white font-hairline opacity-50">
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
+        <div class="absolute bottom-6 right-6 max-w-[10%]">
+          <a href="#home"><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
+        </div>
   </footer>
 </template>
 
@@ -49,13 +51,15 @@
 import divider from "../assets/svg/divider.svg"
 import phoneCloud from "../assets/svg/phone-cloud.svg"
 import mailCloud from "../assets/svg/mail-cloud.svg"
+import arrow from "../assets/svg/arrow.svg"
 
 export default {
   data() {
     return {
       divider,
       phoneCloud,
-      mailCloud
+      mailCloud,
+      arrow
     };
   },
 };

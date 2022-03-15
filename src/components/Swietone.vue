@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center text-center p-8">
+  <section class="min-h-screen flex justify-center items-center text-center p-8" id="swietone">
      <div class="">
         <div>
           <h2 class="font-serif font-light text-white text-2xl mb-4">Czym jest <span class="text-croissantYellow">swietone</span>?</h2>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="bio">
     <div class="min-h-screen flex justify-center relative p-6 z-5">
       <div class="leading-5 relative top-[55px] z-5 p-4">
         <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl">Wojciech Czarnocki</h3>
@@ -23,9 +23,9 @@
         </div>
         
         <div class="flex my-2">
-          <img class="max-w-[35px] align-bottom p-2 social-icon" :src="linkedInIcon" alt="linkedin-icon" />
-          <img class="max-w-[35px] align-bottom p-2 social-icon" :src="gitIcon" alt="github-icon" />
-          <img class="max-w-[30px] align-bottom p-1 social-icon" :src="behanceIcon" alt="behance-icon" />
+          <img class="w-6 p-1 social-icon" :src="linkedInIcon" alt="linkedin-icon" />
+          <img class="mx-2 p-1 w-6 social-icon" :src="gitIcon" alt="github-icon" />
+          <img class="w-7 p-1 social-icon" :src="behanceIcon" alt="behance-icon" />
         </div>
       </div>
       <div class="max-w-[100%] absolute bottom-5 right-0 -z-1">
