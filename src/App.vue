@@ -1,32 +1,40 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import Layout from './components/Layout.vue'
-import Home from './components/Home.vue'
-import Navbar from './components/Navbar.vue';
-import About from './components/About.vue';
-import Intro from './components/Intro.vue';
-import Bio from './components/Bio.vue';
-import Logos from './components/Logos.vue';
-import Footer from './components/Footer.vue';
-import Swietone from './components/Swietone.vue';
-import Menu from './components/Menu.vue';
-</script>
-
 <template>
-  <Layout>
-    <Menu />
+  <Layout v-if="!isMenuOpen">
     <Intro />
-    <Navbar />
+    <Navbar @toggle-Menu="isMenuOpen = $event"/>
     <Home />
     <About />
     <Swietone />
     <Bio />
+    <Projects />
     <Logos />
     <Footer />
   </Layout>
+  <Layout v-else>
+    <Menu @toggle-Menu="isMenuOpen = $event" />
+  </Layout>
+  
 </template>
 
-<style>
+<script >
+import Layout from './components/Layout.vue'
+import Home from './components/Home.vue'
+import Navbar from './components/Navbar.vue';
+import Menu from './components/Menu.vue';
+import Intro from './components/Intro.vue';
+import About from './components/About.vue';
+import Swietone from './components/Swietone.vue';
+import Bio from './components/Bio.vue';
+import Projects from "./components/Projects.vue"
+import Logos from './components/Logos.vue';
+import Footer from './components/Footer.vue';
 
-</style>
+export default {
+  components: { Layout, Home, Navbar, Menu, Intro, About, Swietone, Bio, Projects, Logos, Footer },
+    data() {
+      return{
+        isMenuOpen: false
+      }
+    }
+}
+</script>
