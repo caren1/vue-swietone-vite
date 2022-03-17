@@ -1,6 +1,6 @@
 <template>
   <Layout v-if="!isMenuOpen">
-    <Intro />
+    <!-- <Intro /> -->
     <Navbar @toggle-Menu="isMenuOpen = $event"/>
     <Home />
     <About />

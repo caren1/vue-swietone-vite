@@ -6,7 +6,7 @@
             internetowej lub brandingu?
         </h1>
         <h2 class="text-white text-lg font-sans font-light mt-2 mb-6">A może jeszcze nie masz strony?</h2>
-        <a class="text-white text-md font-serif p-1" href="#">brzmi nieźle.</a>
+        <a class="text-white text-md font-serif p-1 cta" href="#about">brzmi nieźle.</a>
       </div>
       <div class="w-full waves absolute bottom-16 overflow-hidden">
         <img :src="waves" alt="wave-svg" class="overflow-hidden ">
@@ -26,6 +26,22 @@ export default {
     return {
       waves
     }
+  },
+  mounted() {
+    const cta = document.querySelector(".cta");
+    cta.addEventListener("click", clickHandler);
+  
+ 
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
   }
 }
 </script>

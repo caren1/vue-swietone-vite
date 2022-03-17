@@ -1,14 +1,15 @@
 <template>
-  <div class="min-h-screen text-center flex justify-center items-center relative">
-    <div class=" px-6 py-4 leading-8 text-white font-serif text-2xl">
+  <div class="min-h-screen text-center flex justify-center items-center relative main-menu">
+    <div class="px-6 py-4 leading-8 text-white font-serif text-2xl">
       <div class="options ">
-        <ul class=" leading-relaxed">
-          <li><a href="#about">Misja</a></li>
-          <li><a href="#swietone">O swietone</a></li>
-          <li><a href="#bio">O mnie</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#branding">Branding</a></li>
-          <li><a href="#footer"> Współpraca</a></li>
+        <ul class="leading-relaxed">
+          <li><a href="#about" @click="$emit('toggleMenu', false)">Misja</a></li>
+          <li><a href="#swietone" @click="$emit('toggleMenu', false)">O swietone</a></li>
+          <li><a href="#bio" @click="$emit('toggleMenu', false)">O mnie</a></li>
+          <li><a href="#projects" @click="$emit('toggleMenu', false)">Portfolio</a></li>
+          <li><a href="#branding" @click="$emit('toggleMenu', false)">Branding</a></li>
+          <li><a href="#footer" @click="$emit('toggleMenu', false)"> Współpraca</a></li>
+
         </ul>
       </div>
       <div class="my-4  w-max">
@@ -30,8 +31,8 @@
         </div>
       </div>
     </div>
-    <div class="absolute top-6 right-10" @click="$emit('toggleMenu', false)">
-        <div class="menu-kebab">
+    <div class="absolute top-10 right-6" @click="$emit('toggleMenu', false)">
+        <div class="open-kebab">
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
@@ -60,6 +61,24 @@ export default {
          behanceIcon,
          mobileDivider
      }
+ },
+ mounted() {
+  const links = document.querySelectorAll(".main-menu ul a");
+ 
+  for (const link of links) {
+    link.addEventListener("click", clickHandler);
+  }
+ 
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
  }
 }
 </script>
@@ -80,4 +99,5 @@ li {
         transition: all .2s ease-in;
         cursor: pointer;
     }
+    
 </style>

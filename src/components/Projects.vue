@@ -1,6 +1,5 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative w-full" id="projects">
-      <!-- flex flex-wrap justify-center lg:justify-center items-center relative max-w-[85%] h-100 -->
     <div class="" v-if="projects">
       <SingleProject
         :project="project"
@@ -31,7 +30,7 @@ export default {
                 },
                 {
                     title: "Gdyński Szpital Weterynaryjny",
-                    goal: "Realizacja dla prywatnego szpitala weterynaryjnego w Gdyni",
+                    goal: "Realizacja dla klienta biznesowego - prywatny szpital weterynaryjny w Gdyni",
                     description: "Odświeżenie logotypu oraz wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: gswetProject,
                     alt: "gswet-logo",

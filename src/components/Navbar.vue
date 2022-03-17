@@ -65,8 +65,36 @@ export default {
     transform: rotate(45deg);
     .circle {
       opacity: 1;
-      cursor: pointer;
     }
+      cursor: pointer;
+  }
+}
+
+
+.open-kebab{
+  flex-direction: column;
+  position: relative;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: rotate(45deg);
+
+  .circle:nth-child(4),
+  .circle:nth-child(5) {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    margin-top: -3px; 
+    left: 50%;
+  }
+  .circle:nth-child(4) {
+    margin-left: -12px; 
+  }
+  .circle:nth-child(5) {
+    margin-left: 6px; 
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.1) rotate(45deg);
   }
 }
 </style>

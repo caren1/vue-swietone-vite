@@ -42,7 +42,7 @@
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
         <div class="absolute bottom-6 right-6 max-w-[10%]">
-          <a href="#home"><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
+          <a href="#home" class="toTheTop"><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
         </div>
   </footer>
 </template>
@@ -62,6 +62,22 @@ export default {
       arrow
     };
   },
+  mounted() {
+    const cta = document.querySelector(".toTheTop");
+    cta.addEventListener("click", clickHandler);
+  
+ 
+  function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+ 
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+  }
 };
 </script>
 

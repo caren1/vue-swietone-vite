@@ -12,10 +12,10 @@
           <li>przygotować dla niej unikalny szablon</li>
           <li>zoptymalizować ją pod przeglądarki</li>
           <li>zadbać o odpowiedni User Experience</li>
-          <li>zaprojektować branding</li>
+          <li>zaprojektować identyfikację firmy</li>
           <li>odświeżyć wizerunek twojej działalności</li>
           <li>zmodernizować twoją istniejącą stronę</li>
-          <p class="mt-10 text-right text-sm">Chyba, że potrzebujesz czegoś więcej?</p>
+          <p class="mt-10 text-right text-sm">No chyba, że potrzebujesz czegoś więcej?</p>
         </ul>
       </div>
     </div>
