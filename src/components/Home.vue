@@ -1,19 +1,16 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative" id="home">
       <div class="p-6 text-center sm:text-right sm:w-[80%]">
-        <h1 class="text-white text-3xl text-center sm:text-4xl sm:text-left font-serif xxs:text-xl ">
+        <h1 class="text-white text-3xl text-center sm:text-4xl sm:text-left font-serif xxs:text-xl md:text-5xl ">
             Modernizacja strony <br />
             internetowej lub brandingu?
         </h1>
-        <h2 class="text-white text-center sm:text-left text-lg font-sans font-light mt-2 mb-6 ">A może jeszcze nie masz strony?</h2>
+        <h2 class="text-white text-center sm:text-left text-lg font-sans font-light mt-2 mb-6 md:text-xl">A może jeszcze nie masz strony?</h2>
         <a class="text-white text-md sm:text-right font-serif p-1 cta" href="#about">brzmi nieźle.</a>
       </div>
-      <div class="w-full waves absolute bottom-0 overflow-hidden sm:w-fit sm:max-h-[155px]">
-        <img :src="waves" alt="wave-svg" class="overflow-hidden ">
+      <div class="w-full waves absolute bottom-0 overflow-hidden sm:w-screen">
+        <img :src="waves" alt="wave-svg" class="overflow-hidden w-full">
       </div>
-      <!-- <div class="w-full waves absolute bottom-2 overflow-hidden">
-        <img :src="waves" alt="wave-svg" class="overflow-hidden "> -->
-      <!-- </div> -->
   </section>
 </template>
 

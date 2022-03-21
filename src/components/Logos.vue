@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative w-full" id="branding">
-    <div class="flex flex-wrap justify-center lg:justify-center items-center relative max-w-[85%] h-100" v-if="logos">
+    <div class="flex flex-wrap justify-center lg:justify-center items-center relative max-w-[85%] h-100 sm:max-w-[90%] md:max-w-[70%]" v-if="logos">
       <SingleLogo
         :logo="logo"
         v-for="logo in logos"

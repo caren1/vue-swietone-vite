@@ -1,16 +1,16 @@
 <template>
-  <section id="bio" class="min-h-screen flex items-center justify-center">
-    <div class=" flex-col relative z-5">
-      <div class="leading-5 relative z-5 px-8 h-full">
-        <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl">Wojciech Czarnocki</h3>
-        <div class="text-sm">
-          <p class="text-white font-sans font-thin mb-4">
+  <section id="bio" class="min-h-screen flex items-center justify-center sm:relative">
+    <div class=" flex-col relative z-5 sm:flex sm:flex-row sm:static">
+      <div class="leading-5 relative z-5 px-8 h-full sm:max-w-[65%] sm:mb-16 sm:px-12 md:max-w-[50%] md:mb-0 md:ml-16">
+        <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl sm:text-3xl md:text-4xl">Wojciech Czarnocki</h3>
+        <div class="text-sm md:text-[16px]">
+          <p class="text-white font-sans font-thin">
           Obecnie pracuję jako Fullstack Developer w firmie Hapag Lloyd,
           wcześniej przez 2 lata pracowałem jako Junior Java Engineer, natomiast
           interesuję się również web developmentem jak i szeroko pojętym
           projektowaniem intefejsów użytkownika oraz designem.
         </p>
-        <p class="text-white font-sans font-thin mb-4">
+        <p class="text-white font-sans font-thin my-6" >
           Moje realizacje wyróżniają się niestandarowym, nowoczesnym i
           minimalistycznym wyglądem, skrojonym pod oczekiwania klienta. Przy
           każdym projekcie dbam o każdy detal, dzięki czemu tworzę szybkie,
@@ -28,7 +28,7 @@
           <img class="w-7 p-1 social-icon" :src="behanceIcon" alt="behance-icon" />
         </div>
       </div>
-      <div class="max-w-[100%] relative bottom-5 right-0 -z-1">
+      <div class="max-w-[100%] relative bottom-5 right-0 -z-1 sm:absolute sm:bottom-40 sm:max-w-[65%] md:max-w-[60%] md:bottom-16">
         <img :src="selfPortrait" alt="wojciech-czarnocki-portrait -z-1" />
       </div>
     </div>

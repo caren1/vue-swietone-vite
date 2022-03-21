@@ -1,16 +1,20 @@
 <template>
-  <footer class="min-h-screen flex justify-center items-center relative p-6" id="footer">
-    <div class="flex-col w-100 align-center justify-around p-2 min-h-[70vh] p-3">
-      <div class="font-serif">
-        <h4 class="text-4xl text-white mb-2 text-right">
+  <footer class="min-h-screen flex justify-center items-center relative p-6 " id="footer">
+
+    <div class="flex-col w-100 align-center justify-around p-3 min-h-[70vh] sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-full sm:h-[10px]">
+
+      <div class="font-serif sm:w-[45%]">
+        <h4 class="text-4xl text-white mb-2 text-right sm:text-right ">
           Od <span class="text-croissantYellow">brandingu,</span><br />
           aż po <span>stronę!</span>
         </h4>
       </div>
-      <div class="divider hidden">
-        <img :src="divider" alt="divider-svg" />
+
+      <div class="divider hidden sm:block sm:mx-8">
+        <img :src="divider" alt="divider-svg" class="h-full"/>
       </div>
-      <div class="partnership text-right text-white">
+
+      <div class="partnership text-right text-white sm:w-[45%]">
         <h6 class="text-4xl text-white my-4">Współpraca?</h6>
         <p class="text-sm text-white font-light font-sans max-w-[90%] ml-auto p-1">
           Jeżeli są Państwo zainteresowani skorzystaniem z naszych usług,
@@ -27,7 +31,7 @@
         </div>
       </div>
 
-      <div class="mt-8">
+      <div class="mt-8 sm:absolute sm:bottom-36 sm:left-32">
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
                     <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>
@@ -41,7 +45,7 @@
         <p class="absolute bottom-6 text-center font-sans text-white font-hairline opacity-50">
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
-        <div class="absolute bottom-6 right-6 max-w-[10%]">
+        <div class="absolute bottom-6 right-6 max-w-[10%] sm:max-w-[5%]">
           <a href="#home" class="toTheTop"><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
         </div>
   </footer>

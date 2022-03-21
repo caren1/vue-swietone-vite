@@ -30,6 +30,7 @@ module.exports = {
       screens: {
         'xxs': {'max': '360px'},
         'sm': {'min': '640px'},
+        'md': {'min': '1000px'},
       }
   },
   plugins: [],

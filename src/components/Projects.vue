@@ -35,7 +35,8 @@ export default {
                     img: gswetProject,
                     alt: "gswet-logo",
                     url: "https://gswet.pl"
-                }
+                },
+                
             ]
         }
     }

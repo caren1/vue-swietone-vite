@@ -1,13 +1,13 @@
 <template>
   <!-- <div class="grid gap-x-4 grid-cols-2 my-6"> -->
-  <div class="flex-col p-6 items-center justify-center text-center">
-      <div class="w-[40%] max-w-[180px] m-auto p-4">
+  <div class="flex-col p-6 items-center justify-center text-center sm:flex sm:flex-row sm:text-right ">
+      <div class="w-[40%] max-w-[180px] m-auto p-4 sm:p-2 sm:m-6">
           <img :src="project.img" :alt="project.alt" class="w-full"/>
       </div>
-      <div class="leading-5 px-2">
-          <h4 class="font-serif text-croissantYellow mb-2 text-lg">{{project.title}}</h4>
-          <p class="font-sans text-sm font-hairline text-white ">{{project.goal}}</p>
-          <p class="font-sans text-xs font-hairline text-white my-2">{{project.description}}</p>
+      <div class="leading-5 px-2 max-w-[80%] m-auto sm:m-0 sm:max-w-[55%] md:max-w-[45%] md:m-0">
+          <h4 class="font-serif text-croissantYellow mb-2 text-lg sm:text-xl sm:text-left md:text-2xl">{{project.title}}</h4>
+          <p class="font-sans text-sm font-hairline text-white sm:text-[14px] sm:text-left md:text-[16px]">{{project.goal}}</p>
+          <p class="font-sans text-xs font-hairline text-white my-2 sm:text-[14px] sm:text-left sm:mb-3 md:text-[16px]">{{project.description}}</p>
           <a :href="project.url" target="_blank" class="text-xs font-serif text-croissantYellow">zobacz realizację.</a>
       </div>
       
