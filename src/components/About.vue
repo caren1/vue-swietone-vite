@@ -1,9 +1,9 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative" id="about">
-    
+
     <div class="">
-        <h1 class="text-white text-center text-xl font-serif mb-4 sm:text-2xl z-1">Co możemy dla Ciebie zrobić?</h1>
-        <ul class="leading-[40px] xxs:leading-[40px] px-6 py-6 text-white text-[15px] font-sans font-thin ml-[1rem] xxs:text-sm sm:text-lg sm:leading-[50px] sm:ml-[1.5rem]">
+        <h1 class="text-white text-center text-xl font-serif mb-4 sm:text-2xl z-1 md:text-center md:text-4xl">Co możemy dla Ciebie zrobić?</h1>
+        <ul class="leading-[40px] xxs:leading-[40px] px-6 py-6 text-white text-[15px] font-sans font-thin ml-[1rem] xxs:text-sm sm:text-lg sm:leading-[50px] sm:ml-[1.5rem] md:leading-[45px] md:text-[20px] md:ml-28">
           <li>stworzyć nowoczesną stronę internetową</li>
           <li>przygotować dla niej unikalny szablon</li>
           <li>zoptymalizować ją pod przeglądarki</li>
@@ -14,13 +14,10 @@
           <p class="mt-10 text-right text-sm sm:text-lg">No chyba, że potrzebujesz czegoś więcej?</p>
         </ul>    
     </div>
-    <div class="hidden left-0 max-w-[40%]">
-      <img :src="halfMoon" alt="half-moon-svg" class="w-full">
+    <div class="absolute -bottom-2 max-w-[50%] right-0 overflow-hidden sm:max-w-[35%] md:-left-12 md:max-w-[35%] sm:bottom-0">
+      <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden relative -right-8 md:right-0">
     </div>
-    <div class="flex absolute -bottom-2 max-w-[50%] right-0 overflow-hidden sm:max-w-[35%] md:hidden">
-      <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden relative -right-8">
-    </div>
-    <div class="hidden sm:hidden w-full absolute -bottom-6 pattern min-h-[100px]"></div>
+  
   </section>
 </template>
 
@@ -50,5 +47,23 @@ export default {
       background-repeat: repeat;
       background-position: left top;
       
+    }
+
+    .waves {
+      animation: waving 8s infinite;
+    }
+
+    @keyframes waving {
+      0% {
+        transform: translate(0, 0px)
+      }
+
+      25% {
+          transform: translate(0, -35px);
+      }
+      
+      100%{
+        transform: translate(0, 0px);
+      }
     }
 </style>

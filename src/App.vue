@@ -1,6 +1,5 @@
 <template>
   <Layout v-if="!isMenuOpen">
-    <!-- <Intro /> -->
     <Navbar @toggle-Menu="isMenuOpen = $event"/>
     <Home />
     <About />
@@ -21,7 +20,6 @@ import Layout from './components/Layout.vue'
 import Home from './components/Home.vue'
 import Navbar from './components/Navbar.vue';
 import Menu from './components/Menu.vue';
-import Intro from './components/Intro.vue';
 import About from './components/About.vue';
 import Swietone from './components/Swietone.vue';
 import Bio from './components/Bio.vue';
@@ -30,7 +28,7 @@ import Logos from './components/Logos.vue';
 import Footer from './components/Footer.vue';
 
 export default {
-  components: { Layout, Home, Navbar, Menu, Intro, About, Swietone, Bio, Projects, Logos, Footer },
+  components: { Layout, Home, Navbar, Menu, About, Swietone, Bio, Projects, Logos, Footer },
     data() {
       return{
         isMenuOpen: false

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="px-6 py-10 flex justify-between items-center bg-transparent absolute w-screen z-10">
+    <nav class="px-8 py-10 flex justify-between items-center bg-transparent absolute w-screen z-10">
       <div class="max-w-[115px] md:max-w-[150px]">
         <img class="max-w-[100%]" :src="swietoneHorizontalLogo" alt="swietone-main-logo" />
       </div>
