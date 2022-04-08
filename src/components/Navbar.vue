@@ -4,7 +4,7 @@
       <div class="max-w-[115px] md:max-w-[150px]">
         <img class="max-w-[100%]" :src="swietoneHorizontalLogo" alt="swietone-main-logo" />
       </div>
-      <div class="menu" @click="$emit('toggleMenu', true)">
+      <div class="menu" @click="$emit('toggleMenu', true)" tabindex=0 @keypress="$emit('toggleMenu', true)">
         <div class="menu-kebab">
           <div class="circle"></div>
           <div class="circle"></div>

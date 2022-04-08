@@ -1,14 +1,15 @@
 <template>
-  <footer class="min-h-screen flex justify-center items-center relative p-6 sm:p-10" id="footer">
+  <footer class="min-h-screen flex justify-center items-center relative p-6 sm:p-10 md:max-w-[1200px] md:m-auto" id="footer">
 
-    <div class="flex-col w-100 align-center justify-around p-3 min-h-[70vh] sm:flex sm:flex-row sm:justify-evenly sm:items-center sm:w-full ">
-
-      <div class="font-serif sm:w-[50%] sm:flex-col sm:items-center sm:justify-center md:max-w-[45%]">
+    <div class="flex-col w-100 align-center justify-around p-3 min-h-[70vh] sm:flex sm:flex-row sm:justify-evenly sm:items-center sm:w-full" >
+      <div class="font-serif sm:w-[50%] sm:flex-col sm:items-center sm:justify-center md:max-w-[45%]" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <h4 class="text-4xl text-white text-right sm:text-right sm:text-3xl md:text-5xl">
           Od <span class="text-croissantYellow">brandingu,</span><br />
           aż po <span>stronę!</span>
         </h4>
-        <div class="mt-12 ml-6 hidden sm:block">
+        <div class="mt-12 ml-6 hidden sm:inline-block">
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
                     <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>
@@ -20,11 +21,15 @@
         </div>
       </div>
 
-      <div class="divider hidden sm:block sm:mx-6 h-[550px] md:mx-10">
+      <div class="divider hidden sm:block sm:mx-6 h-[550px] md:mx-10" data-aos="flip-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <img :src="divider" alt="divider-svg" class="h-full"/>
       </div>
 
-      <div class="partnership text-right mt-10 text-white sm:w-[50%] md:max-w-[50%]">
+      <div class="partnership text-right mt-10 text-white sm:w-[50%] md:max-w-[50%]" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <h6 class="text-4xl text-white my-4 md:text-5xl">Współpraca?</h6>
         <p class="text-sm text-white font-light font-sans max-w-[90%] ml-auto p-1 sm:max-w-full md:text-[16px]">
           Jeżeli jesteś zainteresowany(a) którąkolwiek z moich usług,
@@ -41,7 +46,9 @@
         </div>
       </div>
 
-      <div class="mt-8 sm:hidden">
+      <div class="mt-8 sm:hidden" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
                     <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>
@@ -55,9 +62,6 @@
         <p class="absolute bottom-6 text-center font-sans text-white font-hairline opacity-50">
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
-        <div class="absolute bottom-6 right-6 max-w-[10%] sm:max-w-[5%] md:max-w-[3%]">
-          <a href="#home" class="toTheTop"><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
-        </div>
   </footer>
 </template>
 
@@ -65,7 +69,6 @@
 import divider from "../assets/svg/divider.svg"
 import phoneCloud from "../assets/svg/phone-cloud.svg"
 import mailCloud from "../assets/svg/mail-cloud.svg"
-import arrow from "../assets/svg/arrow.svg"
 
 export default {
   data() {
@@ -73,25 +76,9 @@ export default {
       divider,
       phoneCloud,
       mailCloud,
-      arrow
     };
   },
-  mounted() {
-    const cta = document.querySelector(".toTheTop");
-    cta.addEventListener("click", clickHandler);
   
- 
-  function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
- 
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
-  }
 };
 </script>
 

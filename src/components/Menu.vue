@@ -1,7 +1,9 @@
 <template>
-  <div class="min-h-screen text-center flex justify-center items-center relative main-menu">
+  <section id="menu" class="min-h-screen text-center flex justify-center items-center relative main-menu md:w-[100vw]" data-aos="flip-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
-    <div class="px-6 py-4 leading-8 text-white font-serif text-2xl sm:text-4xl md:flex md:items-center md:justify-between md:min-w-[100vh] md:text-5xl md:text-left md:font-medium">
+    <div class="px-6 py-4 leading-8 text-white font-serif text-2xl sm:text-4xl md:flex md:items-center md:justify-between md:w-[70vw] md:text-5xl md:text-left md:font-medium">
 
       <div class="options">
         <ul class="leading-relaxed md:leading-normal">
@@ -29,8 +31,8 @@
         </div>
 
         
-        <div class="my-4 text-2xl">
-          <h2 class="md:text-3xl">Media</h2>
+        <div class="my-6 text-2xl">
+          <h2 class="md:text-4xl">Media</h2>
           <div class="flex justify-center items-center md:justify-start md:items-end">
             <a href="https://www.linkedin.com/in/wojciechczarnocki/" target="_blank"><img class="p-2 w-8 md:w-10" :src="linkedInIcon" alt="linkedin-icon" /></a>
             <a href="https://github.com/caren1" target="_blank"><img class="p-2 w-8 md:w-10" :src="gitIcon" alt="github-icon" /></a>
@@ -41,7 +43,7 @@
       </div>
     </div>
 
-    <div class="absolute top-11 right-8" @click="$emit('toggleMenu', false)">
+    <div class="absolute top-11 right-8" @click="$emit('toggleMenu', false)" tabindex=0 @keypress="$emit('toggleMenu', false)">
         <div class="open-kebab">
           <div class="circle"></div>
           <div class="circle"></div>
@@ -50,7 +52,7 @@
           <div class="circle"></div>
         </div>
       </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -97,16 +99,18 @@ function clickHandler(e) {
 li {
       border-bottom: 10px solid transparent;
        border-image: url("../assets/svg/waves.svg") 0 stretch;
+       
 
       &:hover, &:focus {
         border-image: url("../assets/svg/waves.svg") 100 stretch;
         transition: all .35s ease-in;
         cursor: pointer;
+        // transform: scale(1.02);
       }
     }
 
     a:hover, a:focus {  
-        transform: scale(1.04);
+        transform: scale(1.05);
         transition: all .2s ease-in;
         cursor: pointer;
     }

@@ -1,6 +1,8 @@
 <template>
   <section class="min-h-screen flex justify-center items-center relative" id="home">
-      <div class="p-6 text-center sm:text-right sm:w-[80%]">
+      <div class="p-6 text-center sm:text-right sm:w-[80%] " data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <h1 class="text-white text-3xl text-center sm:text-4xl sm:text-left font-serif xxs:text-xl md:text-5xl md:leading-[50px]">
             Modernizacja strony <br />
             internetowej lub brandingu?
