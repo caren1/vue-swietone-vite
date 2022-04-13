@@ -8,7 +8,7 @@
           <p class="font-sans font-light text-white text-sm sm:text-[18px] sm:max-w-[40%] sm:leading-6 sm:text-left sm:font-hairline md:text-xl md:max-w-[30%]">Miejscem, w którym wykorzystuje się kreatywność, aby tworzyć i budować innowacyjne, minimalistyczne i piękne rzeczy.</p>
       </div>
       <div class="font-sans my-6 text-white font-light text-sm xxs:text-xs sm:text-md md:my-8 details" data-aos="fade-down"
-     data-aos-offset="300"
+     data-aos-offset="200"
      data-aos-easing="ease-in-sine">
           <div class="max-w-[120px] m-auto flex-col justify-center items-center sm:flex-row sm:flex sm:justify-evenly md:max-w-[1000px]">
               <div class="flex items-center cloudy sm:flex-col sm:justify-center sm:items-center">

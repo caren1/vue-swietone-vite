@@ -1,15 +1,15 @@
 <template>
   <footer class="min-h-screen flex justify-center items-center relative p-6 sm:p-10 md:max-w-[1200px] md:m-auto" id="footer">
 
-    <div class="flex-col w-100 align-center justify-around p-3 min-h-[70vh] sm:flex sm:flex-row sm:justify-evenly sm:items-center sm:w-full" >
-      <div class="font-serif sm:w-[50%] sm:flex-col sm:items-center sm:justify-center md:max-w-[45%]" data-aos="fade-right"
+    <div class="flex-col w-100 align-center justify-around p-3 min-h-[70vh] sm:flex sm:flex-row sm:justify-evenly sm:items-center sm:w-full footer-info" >
+      <div class="font-serif sm:w-[50%] sm:flex-col sm:items-center sm:justify-center md:max-w-[45%] md:px-6" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         <h4 class="text-4xl text-white text-right sm:text-right sm:text-3xl md:text-5xl">
           Od <span class="text-croissantYellow">brandingu,</span><br />
           aż po <span>stronę!</span>
         </h4>
-        <div class="mt-12 ml-6 hidden sm:inline-block">
+        <div class="mt-12 ml-6 hidden sm:inline-block md:mt-16">
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
                     <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>
@@ -27,7 +27,7 @@
         <img :src="divider" alt="divider-svg" class="h-full"/>
       </div>
 
-      <div class="partnership text-right mt-10 text-white sm:w-[50%] md:max-w-[50%]" data-aos="fade-right"
+      <div class="partnership text-right mt-10 text-white sm:w-[50%] md:max-w-[50%] md:px-8" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         <h6 class="text-4xl text-white my-4 md:text-5xl">Współpraca?</h6>
@@ -47,8 +47,9 @@
       </div>
 
       <div class="mt-8 sm:hidden" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine"
+     >
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
                     <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
                         <li>NIP: 5783130795</li>

@@ -1,5 +1,5 @@
 <template>
-  <Layout v-if="!isMenuOpen">
+  <Layout v-if="!isMenuOpen" :menuState="isMenuOpen">
     <Navbar @toggle-Menu="isMenuOpen = $event"/>
     <Home />
     <About />
@@ -9,7 +9,7 @@
     <Logos />
     <Footer />
   </Layout>
-  <Layout v-else>
+  <Layout :menuState="isMenuOpen" v-else>
     <Menu @toggle-Menu="isMenuOpen = $event" />
   </Layout>
   

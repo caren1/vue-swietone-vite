@@ -4,9 +4,6 @@ import './index.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-
-// AOS.init();
-
 // You can also pass an optional settings object
 // below listed default settings
 AOS.init({

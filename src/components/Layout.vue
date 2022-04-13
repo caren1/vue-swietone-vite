@@ -2,8 +2,10 @@
   <div class="bg-championGreen relative">
       <slot />
        
-      <div class="fixed bottom-6 right-6 max-w-[10%] sm:max-w-[5%] md:max-w-[3%]" onscroll="opacityHandler">
-          <a href="#home" id="toTheTop" ><img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/></a>
+      <div class="fixed bottom-6 right-6 max-w-[7%] sm:max-w-[5%] md:max-w-[3%]" onscroll="opacityHandler">
+          <a href="#home" id="toTheTop" v-if="scrollPosition > 1 && menuState === false" @click="topHandler($event, '#home')">
+            <img :src="arrow" alt="back-to-top-arrow-icon" class="w-100"/>
+          </a>
       </div>
   </div>
 </template>
@@ -18,27 +20,23 @@ data() {
       scrollPosition: null,
     };
   },
+  props: ['menuState'],
    methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.updateScroll);
-    
-    let cta = document.getElementById("toTheTop");
-    cta.addEventListener("click", clickHandler);
-
-    function clickHandler(e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
-    const offsetTop = document.querySelector(href).offsetTop;
+    },
+    topHandler(e, hrefe) {
+      e.preventDefault();
+      const offsetTop = document.querySelector(hrefe).offsetTop;
 
   scroll({
     top: offsetTop,
     behavior: "smooth"
   });
-}
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
   },
 }
 

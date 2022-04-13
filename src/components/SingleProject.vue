@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="grid gap-x-4 grid-cols-2 my-6"> -->
-  <div class="flex-col p-6 items-center justify-center text-center sm:flex sm:flex-row sm:text-right md:max-w-[90%] md:m-auto" data-aos="fade-right"
-     data-aos-offset="300"
+  <div class="flex-col p-2 items-center justify-center text-center sm:flex sm:flex-row sm:text-right md:max-w-[90%] md:m-auto" data-aos="fade-right"
+     data-aos-offset="10"
      data-aos-easing="ease-in-sine">
       <div class="w-[40%] max-w-[180px] m-auto p-4 sm:p-2 sm:m-6">
           <img :src="project.img" :alt="project.alt" class="w-full"/>
@@ -10,9 +10,9 @@
           <h4 class="font-serif text-croissantYellow mb-2 text-lg sm:text-xl sm:text-left md:text-2xl">{{project.title}}</h4>
           <p class="font-sans text-sm font-thin text-white sm:text-[14px] sm:text-left md:text-[16px] md:mb-0">{{project.goal}}</p>
           <p class="font-sans text-xs font-thin text-white my-2 sm:text-[14px] sm:text-left sm:mb-5 md:text-[15px] md:leading-5">{{project.description}}</p>
-          <div class="md:flex md:items-center md:justify-center md:my-4">
-            <img :src="waveLink" alt="wave-link" class="hidden sm:hidden md:block md:w-[60%] md:mr-2 md:py-4 link-wave">
-            <a :href="project.url" target="_blank" class="text-xs font-serif text-croissantYellow md:text-[15px]">zobacz realizację.</a>
+          <div class="md:flex md:items-center md:justify-between md:my-4">
+            <img :src="waveLink" alt="wave-link" class="hidden sm:hidden md:block md:w-[70%] md:mr-2 md:py-4 link-wave">
+            <a :href="project.url" target="_blank" class="text-xs font-serif text-croissantYellow md:text-[15px] min-w-[140px]">zobacz realizację.</a>
           </div>
       </div>
       

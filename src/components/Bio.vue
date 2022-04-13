@@ -5,11 +5,11 @@
       data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-        <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl sm:text-3xl md:text-5xl">Wojciech Czarnocki</h3>
+        <h3 class="text-white text-2xl font-serif mb-4 xxs:text-xl sm:text-3xl md:text-5xl text-croissantYellow">Wojciech Czarnocki</h3>
         <div class="text-sm md:text-[16px]">
           <p class="text-white font-sans font-thin">
           Obecnie pracuję jako Fullstack Developer w firmie Hapag-Lloyd, gdzie rozwijam platformę integrującą różnego rodzaju API.
-          Wcześniej przez 3 lata pracowałem jako Junior Java Engineer i Data Analyst, natomiast
+          Wcześniej przez 3 lata pracowałem jako Junior Java Engineer oraz Data Analyst, natomiast
           interesuję się również web development'em jak i szeroko pojętym projektowaniem intefejsów użytkownika oraz designem.
         </p>
         <p class="text-white font-sans font-thin my-6" >

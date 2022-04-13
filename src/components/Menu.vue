@@ -7,12 +7,12 @@
 
       <div class="options">
         <ul class="leading-relaxed md:leading-normal">
-          <li><a href="#about" @click="$emit('toggleMenu', false)">Misja</a></li>
-          <li><a href="#swietone" @click="$emit('toggleMenu', false)">O swietone</a></li>
-          <li><a href="#bio" @click="$emit('toggleMenu', false)">O mnie</a></li>
-          <li><a href="#projects" @click="$emit('toggleMenu', false)">Portfolio</a></li>
-          <li><a href="#branding" @click="$emit('toggleMenu', false)">Branding</a></li>
-          <li><a href="#footer" @click="$emit('toggleMenu', false)"> Współpraca</a></li>
+          <li><a href="#about" @click="menuHandler($event, '#about')">Misja</a></li>
+          <li><a href="#swietone" @click="menuHandler($event, '#swietone')">O swietone</a></li>
+          <li><a href="#bio" @click="menuHandler($event, '#bio')">O mnie</a></li>
+          <li><a href="#projects" @click="menuHandler($event, '#projects')">Portfolio</a></li>
+          <li><a href="#branding" @click="menuHandler($event, '#branding')">Branding</a></li>
+          <li><a href="#footer" @click="menuHandler($event, '#footer')"> Współpraca</a></li>
         </ul>
       </div>
 
@@ -74,23 +74,22 @@ export default {
          mobileDivider
      }
  },
- mounted() {
-  const links = document.querySelectorAll(".main-menu ul a");
- 
-  for (const link of links) {
-    link.addEventListener("click", clickHandler);
-  }
- 
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
- 
-  scroll({
+ methods: {
+   menuHandler(e, href) {
+     e.preventDefault();
+     this.$emit('toggleMenu', false)
+     let offsetTop;
+     setTimeout(() => {
+       offsetTop = document.querySelector(href).offsetTop;
+
+      scroll({
     top: offsetTop,
     behavior: "smooth"
   });
-}
+     }, 1);
+     
+  
+   }
  }
 }
 </script>

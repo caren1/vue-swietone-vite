@@ -14,6 +14,7 @@
 import SingleProject from "./SingleProject.vue"
 import mctProject from "../assets/svg/logos/mct-project.svg"
 import gswetProject from "../assets/svg/logos/gswet-project.svg"
+import swietoneProject from "../assets/svg/logos/swietone-project.svg"
 
 export default {
     components: { SingleProject },
@@ -21,9 +22,9 @@ export default {
         return {
             projects: [
                 {
-                    title: "MC Trade",
-                    goal: "Realizacja dla klienta indywidualnego - firma ogólnobudowlana",
-                    description: "Zbudowanie całego brandingu, zaprojektowanie logo oraz materiałów marketingowych. Stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
+                    title: "MC Trade Sp. z o.o.",
+                    goal: "Realizacja dla klienta biznesowego - firma ogólnobudowlana",
+                    description: "Zbudowanie całego brandingu, zaprojektowanie logo oraz materiałów marketingowych. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: mctProject,
                     alt: "mc-trade-logo",
                     url: "https://mc-trade.pl"
@@ -31,11 +32,20 @@ export default {
                 {
                     title: "Gdyński Szpital Weterynaryjny",
                     goal: "Realizacja dla klienta biznesowego - prywatny szpital weterynaryjny w Gdyni",
-                    description: "Odświeżenie logotypu oraz wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
+                    description: "Odświeżenie logotypu oraz wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: gswetProject,
                     alt: "gswet-logo",
                     url: "https://gswet.pl"
                 },
+                {
+                    title: "swietone.",
+                    goal: "Realizacja dla własnej działalności",
+                    description: "Zaprojektowanie identyfikacji wizualnej oraz brandingu. Zaprojektowanie i stworzenie strony internetowej wraz z jej pełną responsywwnością na urządzeniach mobilnych.",
+                    img: swietoneProject,
+                    alt: "swietone-logo",
+                    url: "https://swietone.pl"
+                },
+                
                 
             ]
         }
