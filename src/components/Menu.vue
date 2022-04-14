@@ -6,7 +6,7 @@
     <div class="px-6 py-4 leading-8 text-white font-serif text-2xl sm:text-4xl md:flex md:items-center md:justify-between md:w-[70vw] md:text-5xl md:text-left md:font-medium">
 
       <div class="options">
-        <ul class="leading-relaxed md:leading-normal">
+        <ul class="leading-relaxed md:leading-normal w-[75%] m-auto md:w-[100%]">
           <li><a href="#about" @click="menuHandler($event, '#about')">Misja</a></li>
           <li><a href="#swietone" @click="menuHandler($event, '#swietone')">O swietone</a></li>
           <li><a href="#bio" @click="menuHandler($event, '#bio')">O mnie</a></li>
@@ -97,8 +97,10 @@ export default {
 <style scoped lang="scss">
 li {
       border-bottom: 10px solid transparent;
-       border-image: url("../assets/svg/waves.svg") 0 stretch;
-       
+      border-image: url("../assets/svg/waves.svg") 0 stretch;
+      
+     
+     
 
       &:hover, &:focus {
         border-image: url("../assets/svg/waves.svg") 100 stretch;

@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="px-8 py-10 flex justify-between items-center bg-transparent absolute w-screen z-10">
-      <div class="max-w-[115px] md:max-w-[150px]">
+      <div class="max-w-[115px] md:max-w-[150px] logo-container">
         <img class="max-w-[100%]" :src="swietoneHorizontalLogo" alt="swietone-main-logo" />
       </div>
       <div class="menu" @click="$emit('toggleMenu', true)" tabindex=0 @keypress="$emit('toggleMenu', true)">
@@ -32,6 +32,20 @@ export default {
 </script>
 
 <style lang="scss">
+
+.logo-container {
+  animation: secondFade 1s ease-in;
+}
+
+@keyframes secondFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+  }
+}
 
 .circle {
   width: 6px;

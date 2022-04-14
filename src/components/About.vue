@@ -15,7 +15,7 @@
           <p class="mt-10 text-right text-sm sm:text-lg">No chyba, że potrzebujesz czegoś więcej?</p>
         </ul>    
     </div>
-    <div class="absolute -bottom-2 max-w-[50%] right-0 overflow-hidden sm:max-w-[35%] md:-left-12 md:max-w-[35%] sm:bottom-0" 
+    <div class="absolute -bottom-2 max-w-[50%] right-0 overflow-hidden sm:max-w-[35%] md:-left-12 md:max-w-[35%] sm:bottom-0 " 
     >
       <img :src="bigCloud" alt="bigCloud-svg" class="w-100 overflow-hidden relative -right-8 md:right-0" data-aos="fade-right"
      data-aos-offset="300"

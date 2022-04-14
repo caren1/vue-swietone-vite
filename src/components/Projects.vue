@@ -35,7 +35,7 @@ export default {
                     description: "Odświeżenie logotypu oraz wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: gswetProject,
                     alt: "gswet-logo",
-                    url: "https://gswet.pl"
+                    url: "https://gkw-gdynia-25915.web.app/"
                 },
                 {
                     title: "swietone.",
@@ -45,7 +45,6 @@ export default {
                     alt: "swietone-logo",
                     url: "https://swietone.pl"
                 },
-                
                 
             ]
         }

@@ -45,7 +45,7 @@
      data-aos-offset="100"
      data-aos-easing="ease-in-sine"
      >
-          <p>To również jednoosobowa działalność gospodarcza mająca na celu wdrażanie kompleksowych rozwiązań, które wpływają na ogólną poprawę rozpoznawalności oraz odbioru marki, firmy czy produktu. Modernizacja strony internetowej albo brandingu, stworzenie strony "od zera" czy pomoc przy social mediach. Potrzebujesz czegoś więcej?</p>
+          <p>To również jednoosobowa działalność gospodarcza mająca na celu wdrażanie kompleksowych rozwiązań, które wpływają na ogólną poprawę rozpoznawalności oraz odbioru marki, firmy czy produktu. Potrzebujesz kilku usług? Nie ma najmniejszego problemu. <br> <span class="">Napisz do mnie,</span>  a na pewno znajdziemy rozwiązanie, którego potrzebujesz. </p>
           <p class="my-4">Tym co cenię sobie najbardziej przy współpracy z klientem jest czysta, jasna i otwarta komunikacja oraz precyzja, terminowość i satysfakcja zleceniodawcy. Z tego powodu wszystkie usługi objęte są 30 dniową gwarancją, która obejmuje dodatkowe modyfikacje i poprawki. Dodatkowo, z mojej strony mogę zagwarantować w pełni indywidualną oraz profesjonalną realizację wymagań klienta.</p>
       </div>
      </div>

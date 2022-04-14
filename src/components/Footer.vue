@@ -60,6 +60,7 @@
                     </ul>
         </div>
     </div>
+        
         <p class="absolute bottom-6 text-center font-sans text-white font-hairline opacity-50">
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
@@ -70,6 +71,7 @@
 import divider from "../assets/svg/divider.svg"
 import phoneCloud from "../assets/svg/phone-cloud.svg"
 import mailCloud from "../assets/svg/mail-cloud.svg"
+import moonSwietone from "../assets/svg/swietone-moon-logo.svg"
 
 export default {
   data() {
@@ -77,6 +79,7 @@ export default {
       divider,
       phoneCloud,
       mailCloud,
+      moonSwietone
     };
   },
   
