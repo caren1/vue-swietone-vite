@@ -1,4 +1,6 @@
 {
+  "homepage": "https:/swietone.pl",
+  "description": "Modernizacja strony internetowej lub brandingu?",
   "name": "swietone-vue-vite",
   "private": true,
   "version": "0.0.0",
