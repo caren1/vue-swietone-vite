@@ -55,6 +55,7 @@
                         <li>NIP: 5783130795</li>
                         <li>kontakt@swietone.pl</li>
                         <li>czarnocki.w@wp.pl</li>
+                        <li>wojciech@swietone.pl</li>
                         <li>Wojciech Czarnocki</li>
                         <li>(+48) 513 192 155</li>
                     </ul>
