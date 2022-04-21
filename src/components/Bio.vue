@@ -24,11 +24,11 @@
         </p>
         </div>
         
-        <div class="flex my-2">
-          <img class="w-6 p-1 social-icon" :src="linkedInIcon" alt="linkedin-icon" />
-          <img class="mx-2 p-1 w-6 social-icon" :src="gitIcon" alt="github-icon" />
-          <img class="w-7 p-1 social-icon" :src="behanceIcon" alt="behance-icon" />
-        </div>
+        <div class="flex items-center">
+            <a href="https://www.linkedin.com/in/wojciechczarnocki/" target="_blank"><img class="w-6 p-1" :src="linkedInIcon" alt="linkedin-icon" /></a>
+            <a href="https://github.com/caren1" target="_blank"><img class="p-1 w-6 mx-2" :src="gitIcon" alt="github-icon" /></a>
+            <a href="https://www.behance.net/wojtczarny" target="_blank"><img class="p-1 w-7" :src="behanceIcon" alt="behance-icon"/></a>
+          </div>
       </div>
       <div class="max-w-[100%] relative bottom-5 right-0 -z-1 sm:absolute sm:bottom-40 sm:max-w-[65%] md:max-w-[60%] md:bottom-16">
         <img :src="selfPortrait" alt="wojciech-czarnocki-portrait " data-aos="fade-right"

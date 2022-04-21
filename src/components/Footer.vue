@@ -33,7 +33,7 @@
         <h6 class="text-4xl text-white my-4 md:text-5xl">Współpraca?</h6>
         <p class="text-sm text-white font-light font-sans max-w-[90%] ml-auto p-1 sm:max-w-full md:text-[16px]">
           Jeżeli jesteś zainteresowany(a) którąkolwiek z moich usług,
-          proszę skontaktuj się telefonicznie bądź mailowo. Z przyjemnością
+          proszę, skontaktuj się telefonicznie bądź mailowo. Z przyjemnością
           odpowiem na wszelkie pytania i znajdę odpowiednie rozwiązanie.
         </p>
         <div class="flex ml-auto w-100 justify-end my-2">
@@ -51,7 +51,7 @@
      data-aos-easing="ease-in-sine"
      >
             <h5 class="text-4xl text-croissantYellow">swietone.</h5>
-                    <ul class="list-none text-sm text-white font-sans font-hairline leading-5"> 
+                    <ul class="list-none text-sm text-white font-sans font-hairline leading-4"> 
                         <li>NIP: 5783130795</li>
                         <li>kontakt@swietone.pl</li>
                         <li>czarnocki.w@wp.pl</li>
@@ -62,7 +62,7 @@
         </div>
     </div>
         
-        <p class="absolute bottom-6 text-center font-sans text-white font-hairline opacity-50">
+        <p class="absolute bottom-4 text-center font-sans text-white font-hairline opacity-30">
           powered by <br/><span class="font-serif font-light">swietone.</span>
         </p>
   </footer>

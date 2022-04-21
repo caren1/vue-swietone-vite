@@ -23,24 +23,24 @@ export default {
             projects: [
                 {
                     title: "MC Trade Sp. z o.o.",
-                    goal: "Realizacja dla klienta biznesowego - firma ogólnobudowlana",
-                    description: "Zbudowanie całego brandingu, zaprojektowanie logo oraz materiałów marketingowych. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
+                    goal: "Realizacja dla firmy ogólnobudowlanej",
+                    description: "Zaprojektowanie brandingu od podstaw - kolorystyka, logotyp, materiały marketingowe. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: mctProject,
                     alt: "mc-trade-logo",
                     url: "https://mc-trade.pl"
                 },
                 {
                     title: "Gdyński Szpital Weterynaryjny",
-                    goal: "Realizacja dla klienta biznesowego - prywatny szpital weterynaryjny w Gdyni",
-                    description: "Odświeżenie logotypu oraz wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Projekt i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
+                    goal: "Realizacja dla prywatnego szpitala weterynaryjnego w Gdyni",
+                    description: "Odświeżenie wizerunku, odwzorowanie i udoskonalenie logo i jego wariantów. Projekt i realizacja nowej strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych. Cały projekt, pozytywnie wpłynął na liczbę wykonywanych połączeń, odpytań o trasę, wyświetlen profilu firmy oraz liczbę wyszukań.",
                     img: gswetProject,
                     alt: "gswet-logo",
                     url: "https://gkw-gdynia-25915.web.app/"
                 },
                 {
                     title: "swietone.",
-                    goal: "Realizacja dla własnej działalności",
-                    description: "Zaprojektowanie identyfikacji wizualnej oraz brandingu. Zaprojektowanie i stworzenie strony internetowej wraz z jej pełną responsywwnością na urządzeniach mobilnych.",
+                    goal: "Realizacja dla własnej marki i działalności",
+                    description: "Zaprojektowanie identyfikacji wizualnej oraz materiałów marketingowych. Zaprojektowanie i stworzenie strony internetowej wraz z jej pełną responsywnością na urządzeniach mobilnych.",
                     img: swietoneProject,
                     alt: "swietone-logo",
                     url: "https://swietone.pl"

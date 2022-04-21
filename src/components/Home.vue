@@ -8,9 +8,9 @@
             internetowej lub brandingu?
         </h1>
         <h2 class="text-white text-center sm:text-left text-lg font-sans font-light mt-2 mb-6 md:text-xl">A może jeszcze nie masz strony?</h2>
-        <a class="text-white text-md sm:text-right font-serif p-1 cta md:text-lg" href="#about">brzmi nieźle.</a>
+        <a class="text-white text-sm sm:text-right font-serif p-1 cta md:text-lg" href="#about">brzmi nieźle.</a>
       </div>
-      <div class="w-screen waves absolute bottom-0 overflow-hidden">
+      <div class="w-screen waves absolute bottom-6 md:bottom-0 overflow-hidden">
         <img :src="waves" alt="wave-svg" class="overflow-hidden w-full md:h-[10%]">
       </div>
   </section>
@@ -47,6 +47,7 @@ export default {
 
 <style scoped>
     a {
+        animation: clickMe 4s ease-in infinite;
         border-bottom: 6px solid transparent;
         border-image: url("../assets/svg/waves.svg") 100 stretch;
     }
@@ -72,6 +73,22 @@ export default {
       
       100%{
         transform: translate(0, 0px);
+      }
+    }
+
+    @keyframes clickMe {
+      0% {
+
+      }
+
+      50% {
+        border-image: url("../assets/svg/waves.svg") 200 stretch;
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      100% {
+        border-bottom: 6px solid transparent;
+        border-image: url("../assets/svg/waves.svg") 100 stretch;
       }
     }
 </style>
