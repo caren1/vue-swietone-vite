@@ -1,12 +1,12 @@
 {
-  "homepage": "https:/swietone.pl",
-  "description": "Modernizacja strony internetowej lub brandingu?",
   "name": "swietone-vue-vite",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "Modernizacja strony internetowej lub brandingu?",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "lint": "vue-cli-service lint",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,10 +15,32 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
     "autoprefixer": "^10.4.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "lint-staged": "^9.5.0",
     "postcss": "^8.4.6",
+    "prettier": "^2.2.1",
     "sass": "^1.49.8",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "homepage": "https:/swietone.pl",
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }

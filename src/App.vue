@@ -1,6 +1,6 @@
 <template>
-  <Layout v-if="!isMenuOpen" :menuState="isMenuOpen">
-    <Navbar @toggle-Menu="isMenuOpen = $event"/>
+  <Layout v-if="!isMenuOpen" :menu-state="isMenuOpen">
+    <Navbar @toggle-Menu="isMenuOpen = $event" />
     <Home />
     <About />
     <Swietone />
@@ -9,30 +9,40 @@
     <Logos />
     <Footer />
   </Layout>
-  <Layout :menuState="isMenuOpen" v-else>
+  <Layout v-else :menu-state="isMenuOpen">
     <Menu @toggle-Menu="isMenuOpen = $event" />
   </Layout>
-  
 </template>
 
-<script >
+<script>
 import Layout from './components/Layout.vue'
 import Home from './components/Home.vue'
-import Navbar from './components/Navbar.vue';
-import Menu from './components/Menu.vue';
-import About from './components/About.vue';
-import Swietone from './components/Swietone.vue';
-import Bio from './components/Bio.vue';
-import Projects from "./components/Projects.vue"
-import Logos from './components/Logos.vue';
-import Footer from './components/Footer.vue';
+import Navbar from './components/Navbar.vue'
+import Menu from './components/Menu.vue'
+import About from './components/About.vue'
+import Swietone from './components/Swietone.vue'
+import Bio from './components/Bio.vue'
+import Projects from './components/Projects.vue'
+import Logos from './components/Logos.vue'
+import Footer from './components/Footer.vue'
 
 export default {
-  components: { Layout, Home, Navbar, Menu, About, Swietone, Bio, Projects, Logos, Footer },
-    data() {
-      return{
-        isMenuOpen: false
-      }
+  components: {
+    Layout,
+    Home,
+    Navbar,
+    Menu,
+    About,
+    Swietone,
+    Bio,
+    Projects,
+    Logos,
+    Footer
+  },
+  data () {
+    return {
+      isMenuOpen: false
     }
+  }
 }
 </script>
